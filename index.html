@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.header{
+    background-color: rgb(6, 84, 133);
+    color: white;
+    display: flex;
+}
+
+.big-opening{
+  display: flex;
+}
+
+.opening-left{
+    color:#ffffff;
+    width: 33,33%;
+    padding-left: 20px;    
+}
+
+.hinh-flag{
+   display: flex; 
+   margin-left: 2px;
+}
+
+.opening-left img{
+    width: 25px;
+    height: 20px;
+    
+}
+
+.opening-center{
+    width: 33,33%;
+    padding-left: 400px;
+}
+
+.opening-center img{
+    width: 200px;
+}
+.opening-right{
+    width: 33,33%;  
+    padding-left: 300px;
+}
+
+.app{
+    display: flex;
+}
+
+.app-icon img{
+    width: 25px;
+    height: 20px;
+    
+}
+
+.banner{
+    background: url(nen2.jpg);
+    height: 500px;
+}
+.madives{
+    text-align: center;
+    color: #ffffff;
+    font-size: 80px;
+    padding-top: 100px;
+    font-family: 'Times New Roman', Times, serif
+}
+
+.content-button{
+    display: flex;
+    padding-left: 190px;
+    padding-right: 100px;
+    
+}
+.home{
+    color: rgb(0, 0, 0);
+    background-color: red;
+    padding: 10px 15px;
+}
+
+.loaihinh{
+    color: #ffffff;
+    background-color: orange;
+    padding: 10px 20px;
+}
+
+.diemden{
+    color: #ffffff;
+    background-color: rgb(236, 198, 0);
+    padding: 10px 20px;
+}
+
+.tourmoi{
+    background-color: rgb(1, 190, 162);
+    color: #ffffff;
+    padding: 10px 20px;
+}
+
+.khachsan{
+    background-color: rgb(1, 149, 217);
+    color: #ffffff;
+    padding: 10px 20px;
+}
+
+.tintuc{
+    background-color: rgb(1, 190, 162);
+    color: #ffffff;
+    padding: 10px 20px;
+}
+
+.lienhe{
+    background-color: rgb(135, 61,172);
+    color: #ffffff;
+    padding: 10px 20px;
+}
+
+.mauyeucau{
+    background-color: rgb(255, 147, 72);
+    color: #ffffff;
+    padding: 10px 30px;
+}
+.choose-location{
+    background-color:rgb( 26, 26, 26);
+    text-align: center;
+    margin-right: 270px;
+    margin-left: 270px;
+    padding: 15px 0;
+    margin-top: 150px;
+    
+}
+.input-title{
+    background-color:rgb( 49, 49, 49);
+    color: rgb(100, 100, 100);
+    padding: 10px 100px;
+    margin-left: 5px;
+}
+.search{
+    background-color: yellow;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+.title-content{
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
+}
+.title-1{
+    font-size: 50px;
+    color: rgb( 6, 72,122);
+    font-weight: bold;
+}
+.button-banner{
+    border: none;
+    background-color: gray;
+    opacity: 0.3;
+    margin-top: 8px;
+    height: 70px;
+    width: 42px;
+    padding-left: 40px;
+    position: absolute;
+    color: #ffffff;
+    align-items: center;
+    display: flex;
+    margin-left: 1267px;
+}
+
+.button-banner-2{
+    border: none;
+    background-color: gray;
+    opacity: 0.3;
+    margin-top: 8px;
+    height: 70px;
+    width: 40px;
+    padding-right:40px ;
+    position: absolute;
+    color: #ffffff;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 1160px;
+}
+.main-content{
+  margin-right: 25px;
+}
+.big-menu-diadiem{
+    margin-bottom: 50px;
+    
+}
+.menu-diadiem{
+    display: flex;
+}
+.menu-diadiem-1{
+    display: flex;
+}
+.hinh-menu img{
+    width: 100%;
+}
+.title-diadiem{
+    background-color: rgb( 50,  49, 54);
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px 10px ;
+}
+
+.title-diadiem-2{
+    background-color: rgb( 50,  49, 54);
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 18px 10px ;
+}
+
+.ten-diadiem{
+    display: flex;
+    
+}
+.noi-den{
+    color: #ffffff;
+    background-color: rgb( 218, 56, 67);
+    padding: 16px 13px;
+}
+.noi-den-1{
+    color: #ffffff; 
+    padding: 16px 13px;
+    background-color: rgb(240, 121, 37);
+}
+
+.noi-den-2{
+    color: #ffffff;
+    padding: 16px 18px;
+    background-color: rgb(237, 200, 0);
+
+}
+
+.noi-den-3{
+    color: #ffffff;
+    padding: 16px 22px;
+    background-color: #10BEA3;
+}
+
+.noi-den-4{
+    color: #ffffff;
+    padding: 16px 25px;
+    background-color:#0495D8 ;
+}
+
+.noi-den-5{
+    color: #ffffff;
+    padding: 16px 13px;
+    background-color: #8740AA;
+}
+
+.noi-den-6{
+    color: #ffffff;
+    padding: 16px 25px;
+    background-color: #FD4D57;
+}
+.noi-den-7{
+    color: #ffffff;
+    padding: 16px 58px;
+    background-color: #FE944A;  
+}
+.ngay-dem-1{
+    padding: 15px 15px;
+    color: #ffffff;
+    background-color: #CB5D10;
+}
+
+.ngay-dem-2{
+    padding: 15px 15px;
+    color: #ffffff;
+    background-color: #E3B017;
+}
+
+.ngay-dem-3{
+    padding: 15px 15px;
+    color: #ffffff;
+    background-color: #11A18A;
+}
+
+.ngay-dem-4{
+    padding: 15px 15px;
+    color: #ffffff;
+    background-color: #047DB6;
+}
+
+.ngay-dem-5{
+    padding: 15px 17px;
+    color: #ffffff;
+    background-color:#712D90;
+}
+
+.ngay-dem-6{
+    padding: 15px 15px;
+    color: #ffffff;
+    background-color: #E33340;
+}
+
+.ngay-dem-7{
+    color: #ffffff;
+    padding: 15px 19px;
+    background-color: #DD6A19;
+}
+
+.ngay-dem{
+    color: #ffffff;
+    background-color: rgb( 177, 42, 57);
+    padding: 15px 15px;
+}
+.menu-didiem-nho{
+    width: 25%;
+    padding-left: 50px;
+}
+.content-diadiem{
+    background-color: rgb( 255, 255, 255);
+    border-style: groove;
+
+
+}
+.dat-tour{
+    background-color: rgb(5,129, 199);
+    color: #ffffff;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+.vi-tri{
+    color: rgb(105, 105, 105);
+}
+.big-button-vitri{
+    margin-top: 50px;
+}
+.title-content-2{
+    color: gray;
+}
+.big-banner-2{
+    background: url(hoian.jpg);
+    height: 400px;
+}
+.vietnam{
+    color: white;
+    font-size: 80px;
+    margin-top: -75px;
+    margin-left: 245px;
+    font-weight: bold;
+
+}
+.hoian{
+    margin-top:-95px;
+    margin-left:485px;
+    font-size: 35px;
+    color: white;
+}
+.big-dat-tour{
+    color: #0495D8;
+    background-color: white;
+    padding: 10px 30px;
+    margin-top: 200px;
+    margin-left: 1000px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+}
+.title-cuoi{
+    margin-top: 140px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.mini-title{
+    font-size: 15px;
+    color: gray;
+}
+.footer{
+    display: flex;
+    padding: 0 150px ;
+}
+.hinh-footer-1{
+    background: url(nuiphusi.jpg);
+    height: 290px;
+    width: 300px;
+    margin: 20px;
+
+}
+.hinh-footer-2{
+    background: url(tucamthanh.jpeg);
+    height: 290px;
+    width: 300px;
+    background-size: cover;
+    margin: 20px;
+}
+.hinh-footer-3{
+    background: url(Hinh-anh-dat-nuoc-Han-Quoc-dep-Ve-dep-song-dong-cua-anh-sang2.jpg);
+    height: 290px;
+    background-size: cover;
+    width: 300px;
+    margin: 20px;
+}
+.button-footer{
+    margin-top: 7px;
+    padding: 10px;
+    opacity: 0.7;
+    background-color: white;
+    color: #047DB6;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+.dong-cuoi{
+    background-color:#94E1FF;
+    padding: 10px;
+}
+
+
+    </style>
+    
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css   ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Maldives</title>
+</head>
+<body>
+    <div class="header">
+        <div class="big-opening">
+            <div class="opening-left">
+                <p></p><i class="fa-solid fa-mobile-screen"></i> +84.8.3840.8586</p>
+                <div class="hinh-flag">
+                    <div class="flag"> <img src="vn.jpg" alt=""></div>
+                    <div class="flag"> <img src="uk.jpg" alt=""></div>
+                    <div class="flag"> <img src="chine.jpg" alt=""></div>
+                    <div class="flag"> <img src="japan.jpg" alt=""></div>
+                    </div>
+            </div>
+
+            <div class="opening-center">
+                <img src="golomaldives.png" alt="">
+            </div>
+
+            <div class="opening-right">
+                <p>ĐỐI TÁC ĐĂNG NHẬP</p>
+                <div class="app">
+                    <div class="app-icon"> <img src="face.jpg" alt=""></div>
+                    <div class="app-icon"> <img src="insta.jpg" alt=""></div>
+                    <div class="app-icon"> <img src="G+.jpg" alt=""></div>
+                    <div class="app-icon"> <img src="tiktok.jpg" alt=""></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="banner">
+        <div class="content-button">
+            <div class="home">TRANG CHỦ</div>
+            <div class="loaihinh">LOẠI HÌNH DU LỊCH</div>
+            <div class="diemden">ĐIỂM ĐẾN</div>
+            <div class="tourmoi">TOUR MỚI</div>
+            <div class="khachsan">KHÁCH SẠN</div>
+            <div class="tintuc">TIN TỨC</div>
+            <div class="lienhe">LIÊN HỆ</div>
+            <div class="mauyeucau">MẪU YÊU CẦU</div>
+        </div>
+        
+        <div class="madives">Maldives</div>
+        
+        <div class="button-banner">
+            <i class='fas'>&#xf105;</i>
+            
+        </div>
+        <div class="button-banner-2">
+            <i class='fas'>&#xf104;</i>
+        </div>
+
+        <div class="choose-location">
+            <select class="input-title">
+                <option>Chọn điểm đến</option>
+                <option>Việt Nam</option>
+                <option>Maldives</option>
+                <option>Nhật Bản</option>
+                <option>Trung Quốc</option>
+            </select>
+            <select class="input-title">
+                <option>Chọn thời gian</option>
+                <option>12h</option>
+                <option>1h</option>
+                <option>2h</option>
+                <option>3h</option>
+                <option>Giờ linh</option>
+            </select>
+        
+            <button class="search">TÌM KIẾM</button>
+        </div>
+        
+        
+    </div>
+
+    <div class="main-content">
+        <div class="title-content">
+            <p class="title-1">TOUR NỔI BẬT</p>
+            <p class="mini-title">Công ty du lịch An Nam Mandarin tự hào là nhà cung cấp dịch vụ lữ hành chuyên nghiệm trong và ngoài nước</p>
+        </div>
+        <div class="big-menu-diadiem">            
+            <div class="menu-diadiem">
+                <div class="menu-didiem-nho">
+                    <div class="hinh-menu"><img src="1.png" alt=""></div>
+                    <div class="title-diadiem">CÔN MINH-THẠCH LÂM-ĐẠI LÝ-LÊ GIANG</div>
+                    <div class="ten-diadiem">
+                        <div class="noi-den"><i class="fa-solid fa-paper-plane"></i> TRUNG QUỐC</div>
+                        <div class="ngay-dem"><i class='far'>&#xf017;</i> 7 Ngày /6 Đêm</div>
+                        </div>
+                        <div class="content-diadiem">
+                            <p class="title-content-2">Trung Quốc đất nước thiên nhiên cẩm tú tráng lệ, có nền văn hóa 3.500 năm...</p> 
+                            <div class="big-button-vitri">
+                                <button class="dat-tour">ĐẶT TOUR</button>
+                                <button class="vi-tri"><i class='fas'>&#xf3c5;</i></button>
+                            </div>
+                        </div>
+                </div>
+
+                        <div class="menu-didiem-nho">
+                            <div class="hinh-menu"><img src="thuonghai.png" alt=""></div>
+                            <div class="title-diadiem">BẮC KINH-THƯỢNG HẢI-TÔ CHÂU-VÔ TÍCH-HÀNG CHÂU</div>
+                            <div class="ten-diadiem">
+                                <div class="noi-den-1"><i class="fa-solid fa-paper-plane"></i> TRUNG QUỐC</div>
+                                <div class="ngay-dem-1"><i class='far'>&#xf017;</i> 7 Ngày /6 Đêm</div>
+                                </div>
+                                <div class="content-diadiem">
+                                    <p class="title-content-2">Quý khách sẽ trải nghiệm trọn vẹ những tinh hoa văn hóa, ẩm thực tiêu biểu..</p> 
+                                    <div class="big-button-vitri">
+                                        <button class="dat-tour">ĐẶT TOUR</button>
+                                        <button class="vi-tri"><i class='fas'>&#xf3c5;</i></button>
+                                    </div>
+                                </div>
+                        </div>
+
+                        <div class="menu-didiem-nho">
+                            <div class="hinh-menu"><img src="tokyo.png" alt=""></div>
+                            <div class="title-diadiem">TOKYO-TAKAYAMA-KYOTO-KYOYASAN-OSAKA</div>
+                            <div class="ten-diadiem">
+                                <div class="noi-den-2"><i class="fa-solid fa-paper-plane"></i> NHẬT BẢN</div>
+                                <div class="ngay-dem-2"><i class='far'>&#xf017;</i> 12 Ngày /11 Đêm</div>
+                                </div>
+                                <div class="content-diadiem">
+                                    <p class="title-content-2">Tour Tokyo luôn hấp dẫn du khách bởi vẻ đẹp quyến rũ của một thủ đô Nhật</p> 
+                                    <div class="big-button-vitri">
+                                        <button class="dat-tour">ĐẶT TOUR</button>
+                                        <button class="vi-tri"><i class='fas'>&#xf3c5;</i></button>
+                                    </div>
+                                </div>
+                        </div>
+
+                        <div class="menu-didiem-nho">
+                            <div class="hinh-menu"><img src="han.png" alt=""></div>
+                            <div class="title-diadiem-2">THƠ MỘNG XỨ HÀN</div>
+                            <div class="ten-diadiem">
+                                <div class="noi-den-3"><i class="fa-solid fa-paper-plane"></i> HÀN QUỐC</div>
+                                <div class="ngay-dem-3"><i class='far'>&#xf017;</i> 7 Ngày /6 Đêm</div>
+                                </div>
+                                <div class="content-diadiem">
+                                    <p class="title-content-2">Vẻ đẹp quyến rũ mê đắm lòng người sẽ được giới thiệu với du khách</p> 
+                                    <div class="big-button-vitri">
+                                        <button class="dat-tour">ĐẶT TOUR</button>
+                                        <button class="vi-tri"><i class='fas'>&#xf3c5;</i></button>
+                                    </div>
+                                </div>
+                        </div>
+                </div>
+            </div>
+
+            <div class="big-menu-diadiem">            
+                <div class="menu-diadiem">
+                    <div class="menu-didiem-nho">
+                        <div class="hinh-menu"><img src="hokkaido.png" alt=""></div>
+                        <div class="title-diadiem-2">VẺ ĐẸP BẤT TẬN MÙA HÈ HOKKAIDO</div>
+                        <div class="ten-diadiem">
+                            <div class="noi-den-4"><i class="fa-solid fa-paper-plane"></i> NHẬT BẢN</div>
+                            <div class="ngay-dem-4"><i class='far'>&#xf017;</i> 5 Ngày /4 Đêm</div>
+                            </div>
+                            <div class="content-diadiem">
+                                <p class="title-content-2">Nhật Bản, Xứ sở hoa anh đào, vẫn luôn là nơi thu hút rất nhiều du khách du lịch...</p> 
+                                <div class="big-button-vitri">
+                                    <button class="dat-tour">ĐẶT TOUR</button>
+                                    <button class="vi-tri"><i class='fas'>&#xf3c5;</i></button>
+                                </div>
+                            </div>
+                    </div>
+    
+                            <div class="menu-didiem-nho">
+                                <div class="hinh-menu"><img src="vanly.png" alt=""></div>
+                                <div class="title-diadiem">BẮC KINH-THIÊN AN MÔN-TỬ CẤM THÀNH</div>
+                                <div class="ten-diadiem">
+                                    <div class="noi-den-5"><i class="fa-solid fa-paper-plane"></i>TRUNG QUỐC</div>
+                                    <div class="ngay-dem-5"><i class='far'>&#xf017;</i> 5 Ngày /4 Đêm</div>
+                                    </div>
+                                    <div class="content-diadiem">
+                                        <p class="title-content-2">Du lịch Bắc Kinh quý khách sẽ được khám phá vẻ đẹp hòa hợp giữa nét cổ...</p> 
+                                        <div class="big-button-vitri">
+                                            <button class="dat-tour">ĐẶT TOUR</button>
+                                            <button class="vi-tri"><i class='fas'>&#xf3c5;</i></button>
+                                        </div>
+                                    </div>
+                            </div>
+    
+                            <div class="menu-didiem-nho">
+                                <div class="hinh-menu"><img src="phusi.png" alt=""></div>
+                                <div class="title-diadiem-2">TOKYO-GINZA-NÚI PHÚ SĨ</div>
+                                <div class="ten-diadiem">
+                                    <div class="noi-den-6"><i class="fa-solid fa-paper-plane"></i>  NHẬT BẢN</div>
+                                    <div class="ngay-dem-6"><i class='far'>&#xf017;</i> 6 Ngày /5 Đêm</div>
+                                    </div>
+                                    <div class="content-diadiem">
+                                        <p class="title-content-2">Tour Tokyo luôn hấp dẫn du khách bởi vẻ đẹp quyến rũ của một thủ đô Nhật</p> 
+                                        <div class="big-button-vitri">
+                                            <button class="dat-tour">ĐẶT TOUR</button>
+                                            <button class="vi-tri"><i class='fas'>&#xf3c5;</i></button>
+                                        </div>
+                                    </div>
+                            </div>
+    
+                            <div class="menu-didiem-nho">
+                                <div class="hinh-menu"><img src="hongkong.png" alt=""></div>
+                                <div class="title-diadiem-2"> HONG KONG-DISNEY LAND</div>
+                                <div class="ten-diadiem">
+                                    <div class="noi-den-7"><i class="fa-solid fa-paper-plane"></i></div>
+                                    <div class="ngay-dem-7"><i class='far'>&#xf017;</i> 4 Ngày /3 Đêm</div>
+                                    </div>
+                                    <div class="content-diadiem">
+                                        <p class="title-content-2">Quý khách sẽ được dịp trải nghiệm cảm giác thích thú khi tham gia bảo tàng...</p> 
+                                        <div class="big-button-vitri">
+                                            <button class="dat-tour">ĐẶT TOUR</button>
+                                            <button class="vi-tri"><i class='fas'>&#xf3c5;</i></button>
+                                        </div>
+                                    </div>
+                            </div>
+                    </div>
+
+                </div>
+
+        </div>
+
+        <div class="big-banner-2">
+            <button class="big-dat-tour">ĐẶT TOUR</button>
+        
+            <div class="title-hoian">
+                <p class="vietnam">Việt Nam</p>
+                <p class="hoian">Hội An</p>
+            </div>
+        </div>
+        <div class="title-cuoi">
+            <p class="title-1">ĐIỂM ĐẾN QUỐC TẾ</p>
+            <p class="mini-title">Thế mạnh của công ty An Nam Mandarin là chuyên tổ chức các tour du lịch nước ngoài với các điểm đến như Nhật Bản, Trung Quốc và Hàn Quốc.</p>
+        
+            <div class="footer">
+                <div class="hinh-footer-1">
+                    <button class="button-footer">NHẬT BẢN</BUTTon>
+                </div>
+                <div class="hinh-footer-2">
+                    <button class="button-footer">TRUNG QUỐC </button>
+                </div>
+                <div class="hinh-footer-3">
+                    <button class="button-footer">HÀN QUỐC</button>
+                </div>
+            </div>
+            <div class="dong-cuoi">Copyright Annam Mandarin - Travel & MICE @ 2016</div>
+        </div>
+    </div>
+</body>
+</html>
